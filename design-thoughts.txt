@@ -1,0 +1,36 @@
+
+
+You are a GPU programmer in the late 80s/early 90s, before GPUs were really a thing, because you were hired by a company that was ahead of its time in foreseeing the importance of extremely parallel processing
+
+- GPU is made up of many execution cores, each of which is extremely basic (thing super RISC) and has a very small amount of local memory available to it, so you have a hard limit on both program instruction count (per core) and the number of registers available to you (per core).
+- some programs won't fit on a single core, so you have to split them across multiple cores that communicate via a data bus??? or some other mechanism
+- the data bus could simply take a few cycles to communicate, or maybe it transfers data on a fixed clock (that might or might not align well with your program length)
+- because the cores are designed to execute in lockstep, branches consist of shenzhen-io-style shutting off instructions, rather than actually jumping
+- ACT I and ACT II challenges consist of programming shaders for a reference scene that you can see composed of triangles (this should be really fun to program!!!)
+- Act III challenges consist of more standard TIS-100-style inputs and outputs
+- because parallel processing is good for both graphics and cryptography, this gives you an excuse to do both with the same machine, providing a good variety in the types of challenges
+- if I get stuck coming up with rules or challenges, I can look at real GPU architecture, real graphics programming problems, or real cryptography methods for inspiration
+
+- idea: ACT III level could consist of one level that analyzes patterns in crypo data (e.g. passwords or network traffic) to find potential flaws, then further levels that actually work to crack the crypto
+
+- possible score categories: instruction count, core count, program throughput (and/or execution time - cycles taken to completely shade the scene)
+- if busses are quantized, then execution would be measured in bus cycles rather than instruction cycles
+
+things this idea solves:
+- it gives me a cohesive vision
+- it gives an excuse to be doing very low-level resource-constrained programs with unusual limitations on a unique machine in the specific time period I wanted
+- it gives an in-universe justification for the idea that you're solving yet-unsolved problems, and not just retreading old ground
+- it provides a way to give graphical feedback to the player that's not unreasonably labor-intensive to implement (i.e. no super-custom programming and graphics for every level like in shenzhen)
+- 
+
+fun distractions:
+- custom solitaire (or minesweeper?) in the zachtronics tradition
+- "screensavers"
+- music player (that only plays tracks from the OST, probably)
+
+- minor UI "joke": the boss sends you a picture of their dog or something, and you have to click to download the image attachment, but when you do, it shows you a spinny loading animation for long time before finally showing up as an *extremely* low quality (maybe even digitally mangled somehow) image
+
+level ideas:
+- a level where you have to write a checksum computation that will run on the GPU because in order to replace important files on a remote server, you have to create replacement files with (identical sizes and?) matching checksums
+- very tough optional levels where you are given little or no guidance and have to find a pattern in some data - could be based on small googleable hints (like a hex number associated with a well-known real-world exploit)
+

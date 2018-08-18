@@ -1,0 +1,35 @@
+
+
+TODO:
+- italicized text
+- text wrapping and clipping (font metrics)
+- menu bars
+- context menus
+- underlined shortcut keys
+- non-ascii font rendering
+- window dragging and resizing
+- window button icons
+- window button functionality
+- button rendering (inverted border colors)
+- program tiles (at right side of screen)
+- program icons for tiles
+- scrollbars
+- scrollable areas
+- mail application
+- settings application
+- manual application
+- editor application
+
+
+
+PLOT:
+- ACT I: you get hired to make little gadgets for mass production
+- ACT II: your company gets bought out, things go to shit, and you get fired
+- ACT III: you join a socialist collective and run the company out of business or some shit (still working on this)
+
+- possible ACT II optional plot: you get wind of possible corruption involving high-up company execs. you are able to log in as them over the network, if you are able to guess their extremely guessable passwords. you have the option to report it to HR, but if you do, you are promptly and summarily shamed and fired for accessing data you weren't supposed to, and nothing is done about the corruption
+- could also have a plotline related to something more personal (like workplace discrimination or sexual harrassment) that also ends in you getting fired if you report it to HR
+- NOTE: be sure to emphasize how company attitude does a dramatic 180 from considering you a model employee to suddenly dredging up all sorts of obscure reasons to reprimand and fire you
+
+- possibly touch on 
+

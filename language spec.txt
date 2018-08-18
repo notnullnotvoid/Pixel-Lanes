@@ -1,0 +1,53 @@
+- mov lane const dest
+- mov lane src dest
+- shuf lane src dest
+- shift lane src dest
+- shift lane const dest
+- rot lane src dest     ???
+- rot lane const dest     ???
+
+- add lane src dest
+- add lane const dest
+- sub lane src dest
+- sub lane const dest
+- mul lane src dest
+- mul lane const dest
+- div lane src dest
+- div lane const dest
+
+- jmp label
+- jeq lane src src label
+- jeq lane const src label
+- jeq lane src const label
+- jeq lane const const label     ???
+- jgt lane src src label
+- jgt lane const src label
+- jgt lane src const label
+- jgt lane const const label     ???
+
+- wait bus const
+- wait bus
+
+
+
+MOV, SHUF, SHIFT, ADD, SUB, MUL, DIV, JMP, JEQ, JGT, WAIT
+
+
+
+all uppercase
+
+line: *[label] -> [instruction] -> [comment]
+instruction: name -> args
+comment: "#" -> *[any]
+name: identifier in instruction list
+args: [lane] -> loc -> loc | [lane] -> const -> loc | label | [lane] -> loc -> loc -> label | [lane] -> loc -> const -> label | [lane] -> const -> loc -> label | bus | bus -> const
+label: identifier in label list -> ":"
+lane: "L" -> [1|2|4|8|16]
+loc: reg | port | bus
+reg: "R" -> [0-3]
+port: "IN" | "OUT"
+bus: "RIGHT" | "LEFT"
+
+identifier: .[A-Z_] -> *[0-9A-Z_]
+const: *[0-9]
+
